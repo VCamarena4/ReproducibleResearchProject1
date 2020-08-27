@@ -554,7 +554,7 @@ weekendData &lt;- daysData[daysData$weekday==&quot;weekend&quot;, ]</code></pre>
 <p>Next, the average number of steps per interval is calculated, much like it has been done in previous questions.</p>
 <pre class="r"><code>weekdayMean &lt;- aggregate(steps ~ interval, weekdayData, mean)
 weekendMean &lt;- aggregate(steps ~ interval, weekendData, mean)</code></pre>
-<p>Finally the panel plot is created. The x axis indicates each 5 minute interval, and the y axis shows the average number of steps taken. The two plots are divided into weekday, and weekend data.</p>
+<p>Finally the panel plot is created. The x axis indicates each 5 minute interval, and the y axis shows the average number of steps taken. The two plots are divided into weekday, and weekend data</p>
 <pre class="r"><code>par(mfrow=c(2, 1), mar=c(4, 4.1, 3, 2.1))
 plot(weekdayMean$interval, weekdayMean$steps, type=&quot;l&quot;,
      main=&quot;Time Series Plot of Average Steps Taken per Interval, for Weekdays&quot;,

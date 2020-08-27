@@ -173,7 +173,6 @@ daysData$weekday <- factor(daysData$weekday)
 head(daysData)
 ```
 
-
 ```{r}
 weekdayData <- daysData[daysData$weekday=="weekday", ]
 weekendData <- daysData[daysData$weekday=="weekend", ]
